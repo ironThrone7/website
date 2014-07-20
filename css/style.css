@@ -393,10 +393,16 @@ li.profiles{
 		border-color: #8D8D8D;
 	}
 
+.aboutPic {
+    border:1px outset;
+    border-radius: 25px;
+    border-color: black;
+}
+
 #slide-2 {
 	background-color: #1ab4bc;
 	color: #e4e6e5;
-	padding-top: 60px;
+	padding-top: 36px;
 	height:100%;
 }
 
@@ -404,7 +410,7 @@ li.profiles{
 
 	.title-row {
 		font-size: 25px;
-		padding-bottom: 10px;
+		padding-bottom: 5px;
 	}
 	
 	.line-row .hr {
@@ -416,37 +422,27 @@ li.profiles{
 	
 	.subtitle-row {
 		font-size: 35px;
-		padding-bottom: 10px;
-		padding-top: 10px;
+		padding-bottom: 5px;
+		padding-top: 0px;
 	}
 	
 	.content-row {
-		padding-top: 10px;
+		padding-top: 0px;
 	}
 	
-	.content-row i,
-	#about-row-5 i {
-		display: block;
-		margin: 0 auto;
-		max-height: 100%;
-		max-width: 100%;
-	}
+
 	
 	.content-row h2 {
 		font-size: 28px;
-		padding-bottom: 40px;
+		padding-bottom: 0px;
 	}
 	
 	.content-row h4 {
 		font-family: "Titillium Web", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-		font-size: 10px;
+		font-size: 15px;
 		font-weight: 300;
 	}
-	
-	i {
-		font-size: 80px;
-		color: white;
-	}
+
 	
 
 @media (max-width: 767px) {
