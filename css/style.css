@@ -41,7 +41,7 @@
 }
 
 html, body {
-	height: 100%;
+
 	width: 100%;
 }
 
@@ -263,7 +263,8 @@ li.profiles{
     -o-background-size: cover;
     background-size: cover;
     width: 100%;
-    height:100%;
+    display: block;
+    overflow:auto;
 	background-attachment: relative;
 	background-position: center center;
 }
@@ -397,13 +398,13 @@ li.profiles{
     border:1px outset;
     border-radius: 25px;
     border-color: black;
+    float:center;
 }
 
 #slide-2 {
 	background-color: #1ab4bc;
 	color: #e4e6e5;
 	padding-top: 36px;
-	height:100%;
 }
 
 
@@ -443,6 +444,10 @@ li.profiles{
 		font-weight: 300;
 	}
 
+    .projectSubs {
+        padding-top: 10px;
+    }
+
 	
 
 @media (max-width: 767px) {
@@ -472,61 +477,12 @@ li.profiles{
 }
 
 #slide-3 {
-	background-color: #000;
-	margin: 0 auto;
-	overflow: hidden;
-	padding: 0;
-	text-align: left;
-	width: 100%;
+        background-color: #FFFFCC;
+    padding-top: 36px;
 }
 	
-	#slide-3 .col-12 {
-		display: inline-block;
-		height: 451px;
-		margin: 0;
-		padding: 0;
-		width: 452px;
-	}
 
-	#slide-3 a,
-	#slide-3 img {
-		display: inline-block;
-		height: 100%;
-		margin: 0 auto;
-		width: 100%;
-	}
 	
-@media (max-width: 991px) {
-	#slide-3 {
-		text-align: center;
-		width: 100%;
-	}
-	
-	#slide-3 .row {
-		left: 0 !important;
-		margin: 0;
-		width: 100% !important;
-	}
-	
-	#slide-3 .col-12 {
-		height: auto;
-		width: 50%
-	}
-
-	#slide-3 a,
-	#slide-3 img {
-		height: auto;
-		max-height: 100%;
-		max-width: 100%;
-		width: auto;
-	}
-}
-	
-@media (max-width: 767px) {
-	#slide-3 .col-12 {
-		width: 100%;
-	}
-}
 
 #slide-4 {
 	background-color: #34495e;
@@ -614,7 +570,7 @@ li.profiles{
 }
 
 #lightbox-out {
-	background-color: rgba( 0, 0, 0, 0.7 );
+	background-color: rgbsa( 0, 0, 0, 0.7 );
 	height: 100%;
 	position: fixed;
 	width: 100%;
@@ -701,6 +657,174 @@ li.profiles{
 .navigation-slide {
 	cursor: pointer;
 }
+
+#portfolio .portfolio-item {
+    right: 0;
+    margin: 0 0 15px;
+}
+
+#portfolio .portfolio-item .portfolio-link {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: rgba(254,209,54,.9);
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    transition: all ease .5s;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
+    opacity: 1;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 20px;
+    margin-top: -12px;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
+    margin-top: -12px;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
+    margin: 0;
+}
+
+#portfolio .portfolio-item .portfolio-caption {
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 400px;
+    text-align: center;
+    background-color: #fff;
+}
+
+#portfolio .portfolio-item .portfolio-caption h4 {
+    margin: 0;
+    text-transform: none;
+}
+
+#portfolio .portfolio-item .portfolio-caption p {
+    margin: 0;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-style: italic;
+}
+
+#portfolio * {
+    z-index: 2;
+}
+
+@media(min-width:767px) {
+    #portfolio .portfolio-item {
+        margin: 0 0 30px;
+    }
+}
+
+
+.portfolio-modal .modal-content {
+    padding: 100px 0;
+    min-height: 100%;
+    border: 0;
+    border-radius: 0;
+    text-align: center;
+    background-clip: border-box;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.portfolio-modal .modal-content h2 {
+    margin-bottom: 15px;
+    font-size: 3em;
+}
+
+.portfolio-modal .modal-content p {
+    margin-bottom: 30px;
+}
+
+.portfolio-modal .modal-content p.item-intro {
+    margin: 20px 0 30px;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.portfolio-modal .modal-content ul.list-inline {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.portfolio-modal .modal-content img {
+    margin-bottom: 30px;
+}
+
+.portfolio-modal .close-modal {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.portfolio-modal .close-modal:hover {
+    opacity: .3;
+}
+
+.portfolio-modal .close-modal .lr {
+    z-index: 1051;
+    width: 1px;
+    height: 75px;
+    margin-left: 35px;
+    background-color: #222;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.portfolio-modal .close-modal .lr .rl {
+    z-index: 1052;
+    width: 1px;
+    height: 75px;
+    background-color: #222;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+::-moz-selection {
+    text-shadow: none;
+    background: #fed136;
+}
+
+::selection {
+    text-shadow: none;
+    background: #fed136;
+}
+
+img::selection {
+    background: 0 0;
+}
+
+img::-moz-selection {
+    background: 0 0;
+}
+
 
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     Contact
@@ -816,4 +940,6 @@ li.profiles{
   padding-bottom: 2px;
   padding-top: 1px;
 }
+
+
 
