@@ -420,6 +420,14 @@ li.profiles{
 		margin: 0 auto;
 		width: 33%;
 	}
+
+        .line-row .hr3 {
+        background-color: #000000;
+        height: 5px;
+        margin: 0 auto;
+        width: 33%;
+    }
+
 	
 	.subtitle-row {
 		font-size: 35px;
@@ -505,9 +513,21 @@ li.profiles{
 #slide-6 {
 	background-color: #2f2f2f;
 	color: #e4e6e5;
-	padding-bottom: 350px;
-	padding-top: 90px;
+	padding-bottom: 30px;
+	padding-top: 30px;
+    display: block;
+    overflow:auto;
+    background-attachment: relative;
+    background-position: center center;
+
 }
+
+    #slide-6 .subtitle-row {
+        font-size: 35px;
+        padding-bottom: 5px;
+        padding-top: 0px;
+    }
+
 
 @media (max-width: 767px) {
 	#slide-6 {
@@ -516,7 +536,7 @@ li.profiles{
 }
 	
 	#slide-6 .line-row .hr {
-		background-color: #4e4e4e;
+		background-color: #e4e6e5;
 		color: #4e4e4e;
 	}
 
@@ -526,6 +546,72 @@ li.profiles{
 		text-decoration: none;
 	}
 
+#slide-6 {
+    background-color: #2f2f2f;
+    background-image: url(../images/map-image.png);
+    background-position: center;
+    background-repeat: repeat-x;
+}
+
+section#contact .section-heading {
+    color: #fff;
+}
+
+section#contact .form-group {
+    margin-bottom: 0px;
+}
+
+section#contact .form-group input,
+section#contact .form-group textarea {
+    padding: 20px;
+}
+
+section#contact .form-group input.form-control {
+    height: auto;
+}
+
+section#contact .form-group textarea.form-control {
+    height: 236px;
+}
+
+section#contact .form-control:focus {
+    border-color: #fed136;
+    box-shadow: none;
+}
+
+section#contact::-webkit-input-placeholder {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: #bbb;
+}
+
+section#contact:-moz-placeholder {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: #bbb;
+}
+
+section#contact::-moz-placeholder {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: #bbb;
+}
+
+section#contact:-ms-input-placeholder {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: #bbb;
+}
+
+section#contact .text-danger {
+    color: #e74c3c;
+}
+
+
 @media (max-width: 767px) {
 	.with-hover-text{
 		margin-bottom: 2em;
@@ -534,11 +620,11 @@ li.profiles{
 }
 	
 	#contact-row-4 {
-		padding-top: 125px;
+		padding-top: 15px;
 	}
 	
 	#contact-row-4 .col-12 {
-		height: 175px;
+		height: 15px;
 		overflow: hidden;
 		padding-top: 20px;
 		transition: all ease-in .5s;
@@ -737,7 +823,7 @@ li.profiles{
 
 
 .portfolio-modal .modal-content {
-    padding: 100px 0;
+    padding: 10px 0;
     min-height: 100%;
     border: 0;
     border-radius: 0;
@@ -825,6 +911,104 @@ img::-moz-selection {
     background: 0 0;
 }
 
+footer {
+    padding: 25px 0;
+    background: white;
+    text-align: center;
+}
+
+footer span.copyright {
+    text-transform: uppercase;
+    text-transform: none;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 40px;
+}
+
+footer ul.quicklinks {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    text-transform: none;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 40px;
+}
+
+ul.social-buttons {
+    margin-bottom: 0;
+}
+
+ul.social-buttons li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    font-size: 20px;
+    line-height: 40px;
+    outline: 0;
+    color: #fff;
+    background-color: #222;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+}
+
+ul.social-buttons li a:hover,
+ul.social-buttons li a:focus,
+ul.social-buttons li a:active {
+    background-color: #fed136;
+}
+
+.btn-xl {
+    padding: 12px;
+    border-color: #595959;
+    border-radius: 15px;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #e4e6e5;
+    background-color: #595959;
+}
+
+.btn-xl:hover,
+.btn-xl:focus,
+.btn-xl:active,
+.btn-xl.active,
+.open .dropdown-toggle.btn-xl {
+    border-color: #f6bf01;
+    color: #282D33;
+    background-color: #E6E6E6;
+}
+
+.btn-xl:active,
+.btn-xl.active,
+.open .dropdown-toggle.btn-xl {
+    background-image: none;
+}
+
+.btn-xl.disabled,
+.btn-xl[disabled],
+fieldset[disabled] .btn-xl,
+.btn-xl.disabled:hover,
+.btn-xl[disabled]:hover,
+fieldset[disabled] .btn-xl:hover,
+.btn-xl.disabled:focus,
+.btn-xl[disabled]:focus,
+fieldset[disabled] .btn-xl:focus,
+.btn-xl.disabled:active,
+.btn-xl[disabled]:active,
+fieldset[disabled] .btn-xl:active,
+.btn-xl.disabled.active,
+.btn-xl[disabled].active,
+fieldset[disabled] .btn-xl.active {
+    border-color: #fed136;
+    background-color: #fed136;
+}
+
+.btn-xl .badge {
+    color: #fed136;
+    background-color: #fff;
+}
+
 
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     Contact
@@ -845,11 +1029,17 @@ img::-moz-selection {
   margin-bottom:10px;
 }
 
-#contact_form h3 {
+#contact h3 {
   color:#FFF;
-  font-size:20px;
+  font-size:25px;
+  padding-bottom: 15px;
   margin-bottom:5px;
 }
+
+section#contact .text-danger {
+    color: #e74c3c;
+}
+
 
 #contact_form p {
   margin-bottom:5px;
@@ -867,79 +1057,12 @@ img::-moz-selection {
   margin: 0 auto;
 }
 
-#contact_form input:hover {
-  color:#FFF;
-  background-color:#FF6600;
-}
-
-#contact_form textarea {
-  color:#000;
-  width:265px;
-  height:124px;
-  border:3px solid #000;
-  border-radius: 10px;
-  padding:10px;
-  max-width: 320px;
-  max-height: 205px;
-}
-
-#contact_form textarea:hover {
-  color:#FFF;
-  background-color:#FF6600;
-}
-
-#contact_form .email_btn {
-  width:125px;
-  color:#FFF;
-  font-size:25px;
-  text-align:center;
-  vertical-align:text-middle;
-  font-family:Myriad Pro,Arial, Helvetica, sans-serif;
-  background-color:#FF6600;
-  border:3px solid #000;
-  padding-bottom: 4px;
-  padding-top: 4px;
-  border-radius: 40px;
-}
-
-#contact_form .email_btn:hover { 
-  font-weight:bold;
-  text-decoration: none;
-  color:#000; 
-}
-  
-#contact_form .email_btn:active{ 
-}
-
-@media (max-width: 768px) {
-  #contact_form  {
-  padding:5px;
-  } 
-}
-
-@media (max-width: 500px) {
-  #contact_form  {
-  width:100%;
-    min-width: 20px;
-  }
-
-  #contact_form input {
-  width:200px;
-  height:25px;
-  }
-
-  #contact_form textarea {
-  width:200px;
-  height:80px;
-  }
-  #contact_form .email_btn {
-  width:75px;
-  color:#FFF;
-  font-size:15px;
-  border:1px solid #000;
-  padding-bottom: 2px;
-  padding-top: 1px;
-}
 
 
 
+
+
+    #slide-3 .line-row {
+        background-color: #000000;
+        color: #4e4e4e;
+    }
