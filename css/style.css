@@ -7,6 +7,23 @@
  * URL: http://blacktie.co
  */
  
+ .lead {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+ .lead2 {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+ .lead3 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+
 .font-thin {
 	font-family: "Titillium Web", sans-serif;
 	font-weight: 200;
@@ -39,6 +56,8 @@
 	line-height: 1px;
 	height: 1px;
 }
+
+
 
 html, body {
 
@@ -421,11 +440,20 @@ li.profiles{
 		width: 33%;
 	}
 
-        .line-row .hr3 {
-        background-color: #000000;
+    .line-row .hrNEW {
+        background-color: #e4e6e5;
         height: 5px;
         margin: 0 auto;
-        width: 33%;
+        width: 44%;
+    }
+
+
+ .hr4 {
+color: #f00;
+background-color: #f00;
+        height: 45px;
+        margin: 0 auto;
+        width: 66%;
     }
 
 	
@@ -449,7 +477,7 @@ li.profiles{
 	.content-row h4 {
 		font-family: "Titillium Web", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 		font-size: 15px;
-		font-weight: 300;
+		font-weight: 500;
 	}
 
     .projectSubs {
@@ -489,28 +517,35 @@ li.profiles{
     padding-top: 36px;
 }
 	
+    .line-row .hr2 {
+        background-color: #000000;
+        height: 5px;
+        margin: 0 auto;
+        width: 33%;
+    }
 
 	
 
 #slide-4 {
 	background-color: #34495e;
 	color: #e4e6e5;
-	padding-top: 90px;
+	padding-top: 50px;
 }
 
+    #slide-4 .subtitle-row {
+        font-size: 35px;
+        padding-bottom: 15px;
+        padding-top: 0px;
+    }
+
+
 #slide-4 i {
-		font-size: 80px;
 		color: white;
 	}
 
 
-#slide-5 {
-	background-color: #f39c12;
-	color: #e4e6e5;
-	padding-top: 90px;
-}
 
-#slide-6 {
+#slide-5 {
 	background-color: #2f2f2f;
 	color: #e4e6e5;
 	padding-bottom: 30px;
@@ -522,7 +557,7 @@ li.profiles{
 
 }
 
-    #slide-6 .subtitle-row {
+    #slide-5 .subtitle-row {
         font-size: 35px;
         padding-bottom: 5px;
         padding-top: 0px;
@@ -530,23 +565,23 @@ li.profiles{
 
 
 @media (max-width: 767px) {
-	#slide-6 {
+	#slide-5 {
 		background-image: none;
 	}
 }
 	
-	#slide-6 .line-row .hr {
+	#slide-5 .line-row .hr {
 		background-color: #e4e6e5;
 		color: #4e4e4e;
 	}
 
-	#slide-6 a {
+	#slide-5 a {
 		color: inherit;
 		outline: none;
 		text-decoration: none;
 	}
 
-#slide-6 {
+#slide-5 {
     background-color: #2f2f2f;
     background-image: url(../images/map-image.png);
     background-position: center;
@@ -912,16 +947,20 @@ img::-moz-selection {
 }
 
 footer {
-    padding: 25px 0;
-    background: white;
+    padding: 15px 0;
     text-align: center;
+        background-color: black;
+
 }
 
 footer span.copyright {
     text-transform: uppercase;
     text-transform: none;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    line-height: 40px;
+    line-height: 5px;
+    color:white;
+    font-weight: 650;
+
 }
 
 footer ul.quicklinks {
@@ -951,11 +990,34 @@ ul.social-buttons li a {
     transition: all .3s;
 }
 
+
+
+
+ul.intro-social-buttons li a:hover,
+ul.intro-social-buttons li a:focus,
+ul.intro-social-buttons li a:active {
+    color:#000000;
+    background-color: #343434;
+
+}
+
+
 ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
-    background-color: #fed136;
+    background-color: #4C4C4C;
 }
+
+
+  ul.intro-social-buttons > li {
+    margin-bottom: 20px;
+    padding: 0;
+  }
+
+  ul.intro-social-buttons > li:last-child {
+    margin-bottom: 0;
+  }
+
 
 .btn-xl {
     padding: 12px;
@@ -974,7 +1036,6 @@ ul.social-buttons li a:active {
 .btn-xl:active,
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
-    border-color: #f6bf01;
     color: #282D33;
     background-color: #E6E6E6;
 }
@@ -1062,7 +1123,3 @@ section#contact .text-danger {
 
 
 
-    #slide-3 .line-row {
-        background-color: #000000;
-        color: #4e4e4e;
-    }
