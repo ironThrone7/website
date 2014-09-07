@@ -971,11 +971,11 @@ footer ul.quicklinks {
     line-height: 40px;
 }
 
-ul.social-buttons {
+.social-buttons {
     margin-bottom: 0;
 }
 
-ul.social-buttons li a {
+.social-buttons li a {
     display: block;
     width: 40px;
     height: 40px;
